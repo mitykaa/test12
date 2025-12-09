@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Контакты ПроксиЮг — адрес и схема проезда.">
+    <title>Контакты — Прокси Юг</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo" aria-label="ПроксиЮг">Прокси<span class="header__logo-accent">Юг</span></div>
+            <nav class="header__nav" aria-label="Главное меню" id="main-nav">
+                <a class="header__link" href="index.html">главная</a>
+                <span class="header__divider" aria-hidden="true">|</span>
+                <a class="header__link" href="services.html">услуги</a>
+                <span class="header__divider" aria-hidden="true">|</span>
+                <a class="header__link header__link--active" href="contacts.html">контакты</a>
+            </nav>
+            <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+                <span class="header__burger-icon"></span>
+            </button>
+            <a class="header__cta" href="#contacts">связаться с нами</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="contacts-map section">
+            <div class="contacts-map__inner">
+                <div class="contacts-map__frame">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="src/img/карта телефон.png">
+                        <source media="(max-width: 900px)" srcset="src/img/карта планшет.png">
+                        <img class="contacts-map__image" src="src/img/карта десктоп.png" alt="Схема проезда">
+                      </picture>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts-details">
+            <div class="contacts-details__inner">
+                <h2 class="contacts-details__title">Реквизиты и ответственные лица</h2>
+                <ul class="contacts-details__list">
+                    <li class="contacts-details__item">
+                        Юридическое наименование: ООО «Прокси Юг»
+                    </li>
+                    <li class="contacts-details__item">
+                        Фактический адрес: обл. Московская, г.о. Сергиево-Посадский, пгт. Скоропусковский, зона Производственная, 28Г, лит. б ком. 21.
+                    </li>
+                    <li class="contacts-details__item">
+                        ИНН/КПП, ОГРН: 5042157524/504201001, 1215000102514.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contacts-faq">
+            <div class="contacts-faq__inner">
+                <h2 class="contacts-faq__title">Часто задаваемые вопросы по сотрудничеству</h2>
+                <ul class="contacts-faq__list">
+                    <li class="contacts-faq__item">
+                        <h3 class="contacts-faq__question">С кем вы работаете?</h3>
+                        <p class="contacts-faq__answer">
+                            Мы работаем с юридическими лицами и индивидуальными предпринимателями (ИП) — розничными магазинами, супермаркетами, барами, ресторанами, офисами.
+                        </p>
+                    </li>
+                    <li class="contacts-faq__item">
+                        <h3 class="contacts-faq__question">Каков минимальный заказ?</h3>
+                        <p class="contacts-faq__answer">
+                            Условия по минимальной партии и сумме заказа уточняйте у вашего персонального менеджера. Мы стараемся быть гибкими.
+                        </p>
+                    </li>
+                    <li class="contacts-faq__item">
+                        <h3 class="contacts-faq__question">Как быстро осуществляется доставка?</h3>
+                        <p class="contacts-faq__answer">
+                            В городской черте — в течение 24 часов после подтверждения заказа. Возможна срочная доставка (обсуждается индивидуально).
+                        </p>
+                    </li>
+                    <li class="contacts-faq__item">
+                        <h3 class="contacts-faq__question">Нужна ли предоплата?</h3>
+                        <p class="contacts-faq__answer">
+                            Для новых клиентов — по предоплате. Для постоянных партнеров возможны индивидуальные условия, включая отсрочку платежа.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contacts-form" aria-label="Форма запроса">
+            <div class="contacts-form__inner">
+                <h2 class="contacts-form__title">Отправьте запрос онлайн</h2>
+                <form class="contacts-form__form">
+                    <input class="contacts-form__field" type="text" name="name" placeholder="имя" required>
+                    <input class="contacts-form__field" type="text" name="company" placeholder="компания" required>
+                    <input class="contacts-form__field" type="tel" name="phone" placeholder="телефон" required>
+                    <input class="contacts-form__field" type="email" name="email" placeholder="Email" required>
+                    <input class="contacts-form__field" type="text" name="subject" placeholder="Тема обращения" required>
+                    <textarea class="contacts-form__field contacts-form__textarea" name="message" placeholder="Сообщение" required></textarea>
+                    <label class="contacts-form__agreement">
+                        <input class="contacts-form__checkbox" type="checkbox" name="consent" required>
+                        <span>Я согласен на обработку персональных данных</span>
+                    </label>
+                    <button class="contacts-form__submit" type="submit">Отправить запрос</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="section-line" aria-hidden="true"></div>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="footer__inner">
+            <div class="footer__content">
+                <div class="footer__social" aria-label="Социальные сети">
+                    <a class="footer__icon" href="#" aria-label="ВКонтакте">
+                        <img src="src/icons/иконтка вк.svg" alt="" width="28" height="28" loading="lazy">
+                    </a>
+                    <a class="footer__icon" href="#" aria-label="Телеграм">
+                        <img src="src/icons/иконка тг.svg" alt="" width="28" height="28" loading="lazy">
+                    </a>
+                    <a class="footer__icon" href="#" aria-label="WhatsApp">
+                        <img src="src/icons/иконка ватсап.svg" alt="" width="28" height="28" loading="lazy">
+                    </a>
+                </div>
+                <div class="footer__info">
+                    <h2 class="footer__title">ООО "ПРОКСИ ЮГ"</h2>
+                    <p class="footer__text">
+                        Надежный оптовый поставщик продуктов питания, напитков и табачных изделий для бизнеса.
+                        Качество, ассортимент и выгодные условия сотрудничества.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+      (function () {
+        const header = document.querySelector('.header');
+        const burger = document.querySelector('.header__burger');
+        const nav = document.getElementById('main-nav');
+        if (!burger || !header || !nav) return;
+
+        burger.addEventListener('click', () => {
+          const isOpen = header.classList.toggle('header--menu-open');
+          burger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      })();
+    </script>
+</body>
+</html>
+
